@@ -1,2 +1,2 @@
-# PathFinding2.1D
+# Pathfinding2D
  

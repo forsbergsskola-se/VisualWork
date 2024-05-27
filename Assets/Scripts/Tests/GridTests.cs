@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Grids;
 using NUnit.Framework;
 using UnityEditor;

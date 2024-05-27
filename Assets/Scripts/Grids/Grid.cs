@@ -13,7 +13,7 @@ namespace Grids
         
         public bool IsWalkable(int x, int y)
         {
-            return walkableGrid[y*width+x].walkable;
+            return walkableGrid[y*width+x].Walkable;
         }
 
         private static Vector2Int GetCellIndexForPosition(Vector3 position)
@@ -46,10 +46,10 @@ namespace Grids
 
         public IEnumerable<Vector2Int> GetWalkDrections()
         {
-            yield return Vector2Int.up;
-            yield return Vector2Int.right;
-            yield return Vector2Int.down;
-            yield return Vector2Int.left;
+            yield return Vector2Int.up; // prio 1
+            yield return Vector2Int.right; // prio 2
+            yield return Vector2Int.down; // prio 3
+            yield return Vector2Int.left; // prio 4
         }
 
         public IEnumerable<GridCell> GetWalkableNeighborsForCell(GridCell cell)
